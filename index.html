@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <p style="text-align: center;"><a href="https://technicalmastersp.github.io/CODSOFT-INT/level-01/Task-02/index.html" style="text-decoration: none; color: orange;">Technical Master SP</a></p>
+    <h1>Test API</h1>
+
+    <label>API URL</label>
+    <input
+        type="text"
+        id="url"
+        placeholder="https://api.example.com/users"
+    >
+
+    <label>Method</label>
+
+    <select id="method">
+        <option>GET</option>
+        <option>POST</option>
+        <option>PUT</option>
+        <option>PATCH</option>
+        <option>DELETE</option>
+    </select>
+
+    <h3>Headers</h3>
+
+    <div id="headers"></div>
+
+    <button id="addHeader">
+        + Add Header
+    </button>
+
+    <h3>Request Body (JSON)</h3>
+
+    <textarea
+        id="body"
+        placeholder='{
+    "name":"John"
+}'
+    ></textarea>
+
+    <button id="send">
+        Send Request
+    </button>
+
+    <div class="result">
+
+        <h3>Status</h3>
+        <pre id="status"></pre>
+
+        <h3>Duration</h3>
+        <pre id="time"></pre>
+
+        <h3>Response Headers</h3>
+        <pre id="responseHeaders"></pre>
+
+        <h3>Response</h3>
+        <pre id="response"></pre>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
