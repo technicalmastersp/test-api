@@ -1,4 +1,8 @@
-# Test API
+# Test API 
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://technicalmastersp.github.io/test-api/)
+
+🌐 Visit : https://technicalmastersp.github.io/test-api/
 
 A lightweight browser-based API testing tool built with HTML, CSS, and JavaScript. Easily test REST APIs, inspect responses, and verify CORS behavior by providing custom request headers directly from the UI.
 
