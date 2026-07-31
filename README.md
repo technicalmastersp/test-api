@@ -45,7 +45,7 @@ test-api/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/test-api.git
+git clone https://github.com/technicalmastersp/test-api.git
 ```
 
 ### 2. Open the project
