@@ -10,25 +10,30 @@
 
 <div class="container">
 
-    <p style="text-align: center;"><a href="https://technicalmastersp.github.io/CODSOFT-INT/level-01/Task-02/index.html" style="text-decoration: none; color: orange;">Technical Master SP</a></p>
-    <h1>Test API</h1>
+    <h1>API Test (CORS Access)</h1>
+    <h4><a href="https://technicalmastersp.github.io/CODSOFT-INT/level-01/Task-02/index.html" style="text-decoration: none; color: orange;">Technical Master SP</a></h4>
 
-    <label>API URL</label>
-    <input
-        type="text"
-        id="url"
-        placeholder="https://api.example.com/users"
-    >
+    <div class="urlSection">
+        <div class="methodContainer">
+            <label for="method">Method</label>
+            <select id="method">
+                <option selected>GET</option>
+                <option>POST</option>
+                <option>PUT</option>
+                <option>PATCH</option>
+                <option>DELETE</option>
+            </select>
+        </div>
 
-    <label>Method</label>
-
-    <select id="method">
-        <option>GET</option>
-        <option>POST</option>
-        <option>PUT</option>
-        <option>PATCH</option>
-        <option>DELETE</option>
-    </select>
+        <div class="urlContainer">
+            <label for="url">API URL</label>
+            <input
+                type="text"
+                id="url"
+                placeholder="https://api.example.com/users"
+            >
+        </div>
+    </div>
 
     <h3>Headers</h3>
 
@@ -53,11 +58,17 @@
 
     <div class="result">
 
-        <h3>Status</h3>
-        <pre id="status"></pre>
+        <div class="durationAndStatusSection">
+            <div class="statusContainer">
+                <h3>Status</h3>
+                <pre id="status"></pre>
+            </div>
 
-        <h3>Duration</h3>
-        <pre id="time"></pre>
+            <div class="durationContainer">
+                <h3>Duration</h3>
+                <pre id="time"></pre>
+            </div>
+        </div>
 
         <h3>Response Headers</h3>
         <pre id="responseHeaders"></pre>
